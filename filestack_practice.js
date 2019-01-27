@@ -1,7 +1,8 @@
 const filestack = require('filestack-js');
 const fs = require('fs');
 const request = require('request');
-const apikey = 'AC7jvZAmQseWUNWfP5dWxz';
+require('dotenv').config()
+const apikey = process.env.FILESTACK;
 const client = filestack.init(apikey);
 const token = {}
 
@@ -64,18 +65,3 @@ function finalUploader() {
     clientUpload('/placeholder.jpeg');
     
 }
-
-// finalUploader()
-// const http = require('http')
-//  //assigned create server to a variable
-//  const server = http.createServer()
-//  console.log(server);
-//  //server variable is used to capture a request event
-//  //server variable is used to capture a connection event
-//  server.on('connection', () =>{
-//    console.log('connection event');
-//  })
-// server.listen(8124, () =>{
-//   console.log('listening event');
-// });
-// console.log('Server running on port 8124');

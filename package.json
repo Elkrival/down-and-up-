@@ -1,0 +1,17 @@
+{
+  "name": "streamsyea",
+  "version": "1.0.0",
+  "description": "",
+  "main": "filestack_practice.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node filestack_practice.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "filestack-js": "^1.11.0",
+    "nodemon": "^1.18.9",
+    "request": "^2.88.0"
+  }
+}
